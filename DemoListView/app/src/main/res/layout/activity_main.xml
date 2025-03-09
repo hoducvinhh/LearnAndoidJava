@@ -6,9 +6,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:weightSum="100"
+    android:layout_height="wrap_content">
 
+    <EditText
+        android:id="@+id/edt_MonHoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="60"
+        android:ems="10"
+        android:inputType="text"
+        />
+
+    <Button
+        android:id="@+id/btn_Add"
+        android:onClick="addMonHoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/btn_Edit"
+        android:onClick="editMonHoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:text="Edit" />
+
+</LinearLayout>
     <ListView
+        android:layout_marginTop="30dp"
         android:id="@+id/lvMonHoc"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
